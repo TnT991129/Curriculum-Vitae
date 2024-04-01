@@ -9,22 +9,3 @@ window.onscroll = () => {
     } 
   });
 };
-var nombre = document.getElementById('nombre');
-var correo = document.getElementById('correo');
-var error = document.getElementById('error');
-error.style.color = 'red';
-
-function enviarFormulario(){
-  console.log('Enviando formulario')
-  var mensajesError = [];
-  if (nombre.value === null|| nombre.value === ''){
-    mensajesError.push('Ingresa tu nombre');
-  }
-  if (correo.value === null|| nombre.value === ''){
-    mensajesError.push('Ingresa tu correo');
-  }
-
-  error.innerHTML = mensajesError.join(', ');
-  
-  return false
-}

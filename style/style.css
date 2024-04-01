@@ -41,26 +41,23 @@ h1 span{
     color: rgb(198, 255, 160);
 }
 @media screen and (max-width: 767px){
-    .body_footer{
-        font-size: .1rem;
-    }
     .menu{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         position: fixed;
         top: 0;
-        right: -100%;
-        text-align: left;
+        transform: translateX(-150%) ;
+        text-align: center;
         font-family: sans-serif;
         padding: 0 3vw;
         width: 100%;
-        height: 105%;
-        background:linear-gradient(to top, rgba(255, 255, 255, 0.137), rgba(0, 0, 0, 0.171)), rgb(109, 109, 109);
+        height: 100%;
+        background:linear-gradient(to top, rgba(255, 255, 255, 0.137), rgba(0, 0, 0, 0.171)), rgb(53, 53, 53);
         z-index: 1;
     }
     nav h1{
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         margin: 2vw;
@@ -69,18 +66,18 @@ h1 span{
         display: block;
         position: absolute;
         margin: 1vw 2vw;
-        font-size: 6vw;
+        font-size: 5vw;
         right: 0;
         z-index: 20;
         color: rgb(150, 255, 124);
     }
     .menu li{
         width: 100%;
-
     }
+    
     .menu li a{
         color: rgb(184, 255, 117);
-        font-size: 6vw;
+        font-size: 1.5rem;
     }
     .checkbtn{
         display: block;
@@ -92,51 +89,105 @@ h1 span{
     }
     
     #check:checked  ~  .menu{
-        right: 0;
+        transform: translateX(18%);
         transition: ease-in-out .7s;
     }
     #check:not(:checked ) ~ .menu{
         transition: ease-in-out .7s;
-        
+    }
+    .body-header{
+        width: 100%;
+        height: 300%;
+    }
+    .body-header h3, .body-header h1, .body-header h2{
+        font-size: 2.5vw;
+        padding: 1vw 0;
+    }
+    .body-header .text a{
+        width: 150px;
+        height: 40px;
+        margin: 4vw 0;
+        font-size: 1.2rem;
+        background-color: rgb(40, 56, 32);
+        color: white;
     }
     
     .contact-father{
+        position: absolute;
+        width: 1fr;
+        left: 0;
+        width: 100%;
+        top: 65vw;
         display: flex;
-        font-size: 1vw;
     }
+
     .contact-father div{
         border: none;
         margin: 3vw;
         width: 100vw;
     }
-    .container-img{
-        width: 10px;
+    .contact-father i, .contact-father p{
+        font-size: 1rem;
     }
+    .container-img{
+        width: 30px;
+        position: absolute;
+        right:  50vw;
+        top: 50px;
+    }
+    .container-img img{
+        width: 55vw;
+    }
+    
     .body-footer{
         display: flex;
         flex-direction: column;
-        padding: 0%;
+        padding: 2vw;
+        margin: 2vw 0;
+        width: 100%;
+    }
+    .body-footer .info-img img{
+       display: none;
+    }
+    .present h1, .present h3{
+        font-size: 3vw;
+        margin: 2vw 0;
     }
     .present p{
-        font-size: 1.3vw;
+        font-size: 2.5vw;
+        text-align: justify;
+
+
     }
     .grid{
         width: 70vw;
+        display: grid;
+        justify-content: start;
+        align-items: start;
     }
     .grid h3{
-        font-size: 2vw;
-
+        font-size: 2.5vw;
+        
     }
-    
+    .skills .skill .barra-skills span{
+        width:  80%;
+        height: 10px;
+        border-radius: none;
+        background-color: #f46c6c;
+        border-radius: none;
+    }
     .skills-container .skill h1{
-        font-size: 2vw;
+        font-size: 3vw;
         margin: 0 auto;
     }
-    .cont_curriculum{
-        display:grid;
-        grid-template-rows: repeat(2, 1fr);
+    
+    .cont_curriculum div{
+        font-size: 1.2rem;
     }
     
+    .cont strong{
+        color: rgb(186, 255, 154);
+    }
 }
 .father-container{
     display: grid;
@@ -212,6 +263,7 @@ h1 span{
 }
 .container a:hover{
     background-color:  rgb(159, 255, 95);
+    color: black;
     border-radius: .5vw;
 }
 .container h3, h2{
@@ -396,7 +448,7 @@ h1 span{
     color: black;
     box-shadow: 0 0 5px greenyellow;
     right: -15px;
-    font-size: 14px;
+    font-size: 1rem;
 }
 .skills-container.show-animate .barra-skills .htmla{
     width: 0%;
