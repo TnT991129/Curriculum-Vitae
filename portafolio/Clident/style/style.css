@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.199), rgba(255, 255, 255, 0.199)) ;    
+}
+.footer_top{
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    width: 70%;
+    gap: 4vw;
+    color: rgb(165, 154, 5);
+    align-items: center;
+    height: 2.5vw;
+    z-index: 10;
+    position: sticky;
+    font-size: 1vw;
+    border-bottom: solid 2px gold;
+}
+.footer_top-hr{
+    border: dashed 1px gold;
+    z-index: 1;
+    text-align: left;
+    position: absolute;
+    margin: -2px 0 0 29%;
+    width: 2%;
+}
+ .content p{
+    display: inline;
+}
+.content-info1 div{
+    display: flex;
+}
+.content-info1 div p{
+    padding: 0 15px;
+}
+.menu{
+    display: flex;
+    justify-content: end;
+    gap: 3vw;
+    height: 5rem;
+    align-items: center;
+}
+.menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 15%;
+    text-align: center;
+    height: 100%;
+    font-size: 1rem;
+    transition: ease .5s;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: ease-in .3s;
+}
+.menu li:hover{
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+}
+.menu li:hover a{
+    color: rgb(237, 243, 70);
+
+}
+nav img{
+    margin-top: -3%;
+    position: absolute;
+    width: 13.88vw;
+    z-index: 5;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+}
+nav i{
+    display: none;
+}
+.body-container{
+
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 70%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.body-container div img{
+
+    width: 80vw;
+    height: 38vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.barra-separadora{
+    width: 100%;
+    height: 10px;
+    background-color: rgba(185, 174, 9, 0.651);
+    margin: .3vw 0;
+}
+.body_footer{
+    display: flex;
+    width:80%;
+    height: 45vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    z-index: 0;
+    
+}
+
+.container-imgs{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    width: 50%;
+    transform: translateX(-150%);
+    transition: ease-in-out 1.5s;
+    z-index: 1;
+}
+.show-animate .container-imgs{
+    transform: translateX(0);
+
+}
+.container-imgs div{
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
+    height: 15vw;
+    
+}
+.img-dentist-1{
+    background-image: url('../images/logo/depositphotos_251921650-stock-photo-young-female-patient-with-pretty.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.img-dentist-2{
+    background-image: url('../images/logo/sueldo-dentista-mexico.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container_info{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.text{
+    margin: 2vw ;
+    font-size: 1.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0;
+    transition: ease-in-out 1.5s;
+    transform: translateY(-150%);
+}
+.show-animate .text{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+.text span{
+    color: rgb(243, 227, 0);
+}
+.tittle{
+    font-size: 2vw;
+    font-family: sans-serif;
+}
+.text-frase{
+    font-family:cursive;
+}
+.slider-company{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5vw;
+    border-left: none;
+    border-right: none;
+  }
+  .slider-company div{
+    width: 10%;
+    height: 100%;
+    gap: 1px;
+  }
+
+.logo-seguros1{
+    background-image: url(../images/logo/assissa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 5px;
+}
+.logo-seguros2{
+    background-image: url(../images/logo/adeslas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-seguros3{
+    background-image: url(../images/logo/um.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.logo-seguros4{
+    background-image: url(../images/logo/plusultra.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros5{
+    background-image: url(../images/logo/global-card.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros6{
+    background-image: url(../images/logo/odontogrup.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros7{
+    background-image: url(../images/logo/mapfre.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros8{
+    background-image: url(../images/logo/dentyred.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros9{
+    background-image: url(../images/logo/fiatc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.location{
+    text-align: center;
+    background-color:rgb(250, 249, 249);
+    color: rgba(131, 122, 0, 0.863) ;
+}
+.location h1{
+    font-size: 2vw;
+    padding: 3vw;
+}
+.img-location{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    height: 45vw;
+    background-color: white;
+    border-bottom: 20px solid  rgba(185, 174, 9, 0.651);
+}
+.img-location div{
+    width: 80%;
+    height: 80%;
+    margin: .3vw auto;
+    border-radius: 15px;
+    display: inline;
+}
+iframe{
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px black;
+    width: 40vw;
+    height: 25vw;
+    margin-bottom: 5vw;
+}
+
+.img-location h2{
+    margin: 2%;
+    font-size: 1.5vw;
+}
+.principal_container{
+    height:  45vw;
+}
+form{
+    display: flex;
+    width: 80%;
+    background-color: rgb(212, 212, 212);
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 2vw;
+    gap: 2vw;
+    border-radius: 2vw ;
+    box-shadow: 7px 9px 5px rgb(97, 97, 97);
+}
+fieldset{
+    display: flex;
+    width: 60%;
+    text-align: left;
+    flex-direction: column;
+    border: none;
+    font-size: 1.5vw;
+    padding-bottom: 2vw;
+    color: black;
+    font-weight: 700;
+}
+input{
+    margin: 0 0 1vw 0 ;
+    width: 100%;
+    height: 1.5vw;
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+    background-color: rgb(255, 253, 241);
+}
+textarea{
+    width: 100%;
+    margin: 1vw 0;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.664);
+    border-radius: 0  10px 10px 0;
+    background-color:  rgb(255, 253, 241);
+
+}
+.btn{
+    color: black;
+    background-color:   rgb(250, 244, 209);
+    font-size: 1.5vw;
+    height: 3vw;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    transition: .5s;
+}
+.form_whats{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 40%;
+    gap: 2vw;
+    color: black;
+}
+.form_whats div{
+    display: flex;
+    border-bottom: 2px solid gold;
+    justify-content: center;
+    font-size: 1vw;
+}
+
+.btn:hover{
+    background-color: gold;
+    box-shadow: 1px 2px 10px grey;
+    border-radius: 5px;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    .body_footer{
+        font-size: .1rem;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -150%;
+        width: 100vw;
+        height: 100%;
+        background-color:bisque;
+        z-index: 10;
+    }
+    .fi-br-menu-burger{
+        display: block;
+        position: absolute;
+        margin: 1vw 2vw;
+        font-size: 4vw;
+        right: 0;
+        z-index: 20;
+        color: rgb(110, 83, 14);
+    }
+    
+    .menu img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 5vw 0 0 1vw;
+    }
+    .menu li{
+        width: 100%;
+
+    }
+    .menu li a{
+        color: rgb(153, 151, 20);
+        font-size: 2vw;
+    }
+    .checkbtn{
+        display: block;
+        z-index: 3;
+        cursor: pointer;
+        overflow: visible;
+    }
+    
+    #check:checked  ~  .menu{
+        right: 0;
+        transition: ease-in-out .7s;
+    }
+      #check:not(:checked ) ~ .menu{
+        transition: ease-in-out .7s;
+        
+      }
+    
+    
+    fieldset{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    textarea{
+        width: 35vw;
+        height: 10vw;
+    }
+    .btn{
+        font-size: 1.5vw;
+    }
+}

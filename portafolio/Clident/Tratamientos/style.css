@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    
+}
+.footer_top{
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    width: 70%;
+    gap: 4vw;
+    color: rgb(165, 154, 5);
+    align-items: center;
+    height: 2.5vw;
+    z-index: 10;
+    position: sticky;
+    font-size: 1vw;
+    border-bottom: solid 2px gold;
+}
+.footer_top-hr{
+    border: dashed 1px gold;
+    z-index: 1;
+    text-align: left;
+    position: absolute;
+    margin: -2px 0 0 29%;
+    width: 2%;
+}
+ .content p{
+    display: inline;
+}
+.content-info1 div{
+    display: flex;
+}
+.content-info1 div p{
+    padding: 0 15px;
+}
+.menu{
+    display: flex;
+    justify-content: end;
+    gap: 3vw;
+    height: 5rem;
+    align-items: center;
+}
+.menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 15%;
+    text-align: center;
+    height: 100%;
+    font-size: 1rem;
+    transition: ease .5s;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: ease-in .3s;
+}
+.menu li:hover{
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+}
+.menu li:hover a{
+    color: rgb(237, 243, 70);
+
+}
+nav img{
+    margin-top: -3%;
+    position: absolute;
+    width: 13.88vw;
+    z-index: 5;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+}
+.title{
+    margin-top: 8vw;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family:  serif;
+    color: rgb(243, 212, 35);
+    text-shadow: 0px 9px 5px rgba(0, 0, 0, 0.185);
+    font-family: 'Courier New', Courier, monospace;
+}
+.body_container img{
+    width: 100%;
+    height: 150%;
+    object-fit: contain;
+    border-radius: 1vw 1vw 0 0;
+}
+.body_container div{
+    filter: drop-shadow(0px 0px 2px black);
+
+}
+.body_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 450px);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.199), rgba(255, 255, 255, 0.199)) ;    
+    border-radius: 2vw;
+    box-shadow: 2px 3px 7px;
+    padding: 2vw;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5vw auto;   
+    height: 100%;
+    text-align: center;
+    gap: 4vw;
+    z-index: 0;
+}
+
+.body_container h2{
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+.slider-company{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5vw;
+    border: 5px solid  rgb(172, 123, 0);
+    border-left: none;
+    border-right: none;
+  }
+  .slider-company div{
+    width: 10%;
+    height: 100%;
+    gap: 1px;
+  }
+
+.logo-seguros1{
+    background-image: url(../images/logo/assissa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 5px;
+}
+.logo-seguros2{
+    background-image: url(../images/logo/adeslas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-seguros3{
+    background-image: url(../images/logo/um.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.logo-seguros4{
+    background-image: url(../images/logo/plusultra.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros5{
+    background-image: url(../images/logo/global-card.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros6{
+    background-image: url(../images/logo/odontogrup.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros7{
+    background-image: url(../images/logo/mapfre.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros8{
+    background-image: url(../images/logo/dentyred.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros9{
+    background-image: url(../images/logo/fiatc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav i{
+    display: none;
+}
+@keyframes animation {
+    0%{
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -150%;
+        width: 100vw;
+        height: 100%;
+        background-color:bisque;
+        z-index: 20;
+    }
+    .fi-br-menu-burger{
+        display: block;
+        position: absolute;
+        margin: 1vw 2vw;
+        font-size: 4vw;
+        right: 0;
+        z-index: 20;
+        color: rgb(110, 83, 14);
+        z-index: 21;
+        transition: .6s;
+    }
+    
+    .menu img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 5vw 0 0 1vw;
+    }
+    .title{
+        font-size: x-large;
+    }
+    .menu li a{
+        color: rgb(153, 151, 20);
+        font-size: 2vw;
+    }
+    .menu li{
+        width: 100%;
+    }
+    .checkbtn{
+        display: block;
+        z-index: 3;
+        cursor: pointer;
+        overflow: visible;
+    }
+    
+    #check:checked  ~  .menu{
+        right: 0;
+        transition: ease-in-out .7s;
+    }
+      #check:not(:checked ) ~ .menu{
+        transition: ease-in-out .7s;
+        
+      }
+    
+}
+.q{
+    animation: animation 1s;
+}
+.w{
+    animation: animation 1.3s;
+}
+.e{
+    animation: animation 1.6s;
+}
+.a{
+    animation: animation 1.9s;
+}
+.s{
+    animation: animation 2.3s;
+}
+.d{
+    animation: animation 2.6s;
+}
+.z{
+    animation: animation 2.9s;
+}
+.x{
+    animation: animation 3.3s;
+}
+.c{
+    animation: animation 3.6s;
+}

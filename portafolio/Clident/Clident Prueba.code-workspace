@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Clident"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Clident Prueba"
+	}
+}

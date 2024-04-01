@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.199), rgba(255, 255, 255, 0.199)) ;    
+   
+}
+.footer_top{
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    width: 70%;
+    gap: 4vw;
+    color: rgb(165, 154, 5);
+    align-items: center;
+    height: 2.5vw;
+    z-index: 10;
+    position: sticky;
+    font-size: 1vw;
+    border-bottom: solid 2px gold;
+}
+.footer_top-hr{
+    border: dashed 1px gold;
+    z-index: 1;
+    text-align: left;
+    position: absolute;
+    margin: -2px 0 0 29%;
+    width: 2%;
+}
+ .content p{
+    display: inline;
+}
+.content-info1 div{
+    display: flex;
+}
+.content-info1 div p{
+    padding: 0 15px;
+}
+.menu{
+    display: flex;
+    justify-content: end;
+    gap: 3vw;
+    height: 5rem;
+    align-items: center;
+}
+.menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 15%;
+    text-align: center;
+    height: 100%;
+    font-size: 1rem;
+    transition: ease .5s;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: ease-in .3s;
+}
+.menu li:hover{
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+}
+.menu li:hover a{
+    color: rgb(237, 243, 70);
+
+}
+nav img{
+    margin-top: -3%;
+    position: absolute;
+    width: 13.88vw;
+    z-index: 5;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+}
+nav i{
+    display: none;
+}
+.text-introduction{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.788), rgba(255, 255, 255, 0.274)), url("../images/images-page-principal/daniel-frank-wKbWAMlHgNo-unsplash.jpg") ;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vw;
+    filter:grayscale(.5);
+    font-size: 2.5vw;
+}
+.text-introduction p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 12vw 1vw;
+    color: rgb(255, 245, 155);
+}
+span{
+    color: gold;
+}
+.text-middle{
+    margin: 2vw 0;
+    gap: 2vw;
+    width: 100%;
+    height: 30vw;
+    text-align: left;
+    font-size: 2.5vw;
+    padding: 7vw 1vw;
+    color: rgb(0, 0, 0);
+}
+.text-middle p{
+    color:rgb(114, 114, 87);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vw 0;
+    gap: 2vw;
+    width: 100%;
+    height: 30vw;
+    text-align: left;
+    font-size: 2.5vw;
+    padding: 7vw 1vw;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.788), rgba(255, 255, 255, 0.274)), url("../images/images-page-principal/caroline-lm--m-4tYmtLlI-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.text-footer p{
+    color: rgb(255, 245, 155);
+    width: 80%;
+    margin: 0 auto;
+}
+.text-footer a{
+    text-decoration: none;
+    font-style: none;
+    color: rgb(75, 73, 61);
+    background-color: rgb(255, 255, 237);
+    width: 30%;
+    text-align: center;
+    transition: ease-in .2s;
+    border-radius: 1vw;
+}
+.text-footer a:hover{
+    background-color: rgb(54, 54, 54);
+    color: gold;
+    box-shadow: 0 0 10px gold;
+}
+.s1{
+    background-image: url("../images/logo/assissa.png");
+    background-position: left;
+    background-size:cover;
+}
+.s2{
+    background-image: url("../images/logo/adeslas.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s3{
+    background-image: url("../images/logo/um.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.s4{
+    background-image: url("../images/logo/plusultra.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    
+}
+.s5{
+    background-image: url("../images/logo/global-card.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.s6{
+    background-image: url("../images/logo/odontogrup.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.s7{
+    background-image: url("../images/logo/mapfre.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.s8{
+    background-image: url("../images/logo/dentyred.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.s9{
+    background-image: url("../images/logo/fiatc.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.slider-company{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5vw;
+    border: 5px solid  rgb(172, 123, 0);
+    border-left: none;
+    border-right: none;
+  }
+  .slider-company div{
+    width: 10%;
+    height: 100%;
+    gap: 1px;
+  }
+
+.logo-seguros1{
+    background-image: url(../images/logo/assissa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 5px;
+}
+.logo-seguros2{
+    background-image: url(../images/logo/adeslas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-seguros3{
+    background-image: url(../images/logo/um.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.logo-seguros4{
+    background-image: url(../images/logo/plusultra.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros5{
+    background-image: url(../images/logo/global-card.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros6{
+    background-image: url(../images/logo/odontogrup.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros7{
+    background-image: url(../images/logo/mapfre.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros8{
+    background-image: url(../images/logo/dentyred.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-seguros9{
+    background-image: url(../images/logo/fiatc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav i{
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -150%;
+        width: 100vw;
+        height: 100%;
+        background-color:bisque;
+        z-index: 10;
+    }
+    .fi-br-menu-burger{
+        display: block;
+        position: absolute;
+        margin: 1vw 2vw;
+        font-size: 4vw;
+        right: 0;
+        z-index: 20;
+        color: rgb(110, 83, 14);
+    }
+    
+    .menu img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 5vw 0 0 1vw;
+    }
+    .menu li a{
+        color: rgb(153, 151, 20);
+        font-size: 2vw;
+    }
+    .menu li{
+        width: 100%;
+    }
+    .checkbtn{
+        display: block;
+        z-index: 3;
+        cursor: pointer;
+        overflow: visible;
+    }
+    
+    #check:checked  ~  .menu{
+        right: 0;
+        transition: ease-in-out .7s;
+    }
+      #check:not(:checked ) ~ .menu{
+        transition: ease-in-out .7s;
+        
+      }
+    }
