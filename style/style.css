@@ -56,6 +56,9 @@ h1 span{
         background:linear-gradient(to top, rgba(255, 255, 255, 0.137), rgba(0, 0, 0, 0.171)), rgb(53, 53, 53);
         z-index: 1;
     }
+    .menu li a:target ~.menu {
+        transform: translateX(150%);
+    }
     nav h1{
         position: fixed;
         top: 0;
@@ -111,7 +114,7 @@ h1 span{
         background-color: rgb(40, 56, 32);
         color: white;
     }
-    
+
     .contact-father{
         position: absolute;
         width: 1fr;
@@ -187,6 +190,23 @@ h1 span{
     
     .cont strong{
         color: rgb(186, 255, 154);
+
+    }
+    .contact legend, .contact span{
+        padding-left: 14vw;
+    }
+    
+    .redes div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .redes i, .redes span, .redes h1{
+        justify-content: center;
+        align-items: start;
+        font-size: 1rem;
     }
 }
 .father-container{
@@ -195,7 +215,6 @@ h1 span{
     margin: 0 5vw;
     gap: 2vw;
     color: rgba(255, 255, 255, 0.877);
-    
 }
 
 
