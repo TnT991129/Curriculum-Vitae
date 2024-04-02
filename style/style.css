@@ -68,8 +68,8 @@ h1 span{
     .fi-br-menu-burger{
         display: block;
         position: absolute;
-        margin: 1vw 2vw;
-        font-size: 5vw;
+        margin: 1vw 3vw;
+        font-size: 6vw;
         right: 0;
         z-index: 20;
         color: rgb(150, 255, 124);
@@ -100,10 +100,11 @@ h1 span{
     }
     .body-header{
         width: 100%;
-        height: 300%;
+        height: 70vh;
+        margin-top: 20vw;
     }
     .body-header h3, .body-header h1, .body-header h2{
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         padding: 1vw 0;
     }
     .body-header .text a{
@@ -120,7 +121,7 @@ h1 span{
         width: 1fr;
         left: 0;
         width: 100%;
-        top: 65vw;
+        top: 85vw;
         display: flex;
     }
 
@@ -136,7 +137,7 @@ h1 span{
         width: 30px;
         position: absolute;
         right:  50vw;
-        top: 50px;
+        top: 25vw;
     }
     .container-img img{
         width: 55vw;
@@ -146,7 +147,6 @@ h1 span{
         display: flex;
         flex-direction: column;
         padding: 2vw;
-        margin: 2vw 0;
         width: 100%;
     }
     .body-footer .info-img img{
@@ -172,18 +172,14 @@ h1 span{
         font-size: 2.5vw;
         
     }
-    .skills .skill .barra-skills span{
-        width:  80%;
-        height: 10px;
-        border-radius: none;
-        background-color: #f46c6c;
-        border-radius: none;
-    }
     .skills-container .skill h1{
-        font-size: 3vw;
+        font-size: 3.5vw;
+        padding: 4vw 0;
         margin: 0 auto;
     }
-    
+    .contact{
+        gap: 10px;
+    }
     .cont_curriculum div{
         font-size: 1.2rem;
     }
@@ -192,21 +188,26 @@ h1 span{
         color: rgb(186, 255, 154);
 
     }
-    .contact legend, .contact span{
-        padding-left: 14vw;
-    }
-    
     .redes div{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        text-align: center;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
+        text-align: left;
     }
     .redes i, .redes span, .redes h1{
-        justify-content: center;
-        align-items: start;
+        justify-content: left;
+        align-items: center;
         font-size: 1rem;
+    }
+    .contact_form{
+        width: 80%;
+    }
+    .contact_redes{
+        width: 80%;
+    }
+    .form legend{
+        margin-left: 2vw;
     }
 }
 .father-container{
@@ -215,6 +216,7 @@ h1 span{
     margin: 0 5vw;
     gap: 2vw;
     color: rgba(255, 255, 255, 0.877);
+    
 }
 
 
@@ -641,6 +643,11 @@ h1 span{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: rgb(32, 32, 32);
+    padding-top: 3vw 2vw;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 1vw ;
 }
 .contact_form{
     display: flex;
@@ -652,7 +659,7 @@ h1 span{
 }
 .contact i{
     display: flex;
-    justify-content:space-around;
+    gap: 20px;
     margin-top: 1vw;
     color: rgb(164, 255, 164);
 
